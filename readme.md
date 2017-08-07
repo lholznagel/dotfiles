@@ -6,7 +6,7 @@ These are my personal dotfiles that I use.
 
 ## Todo
 - installer
-- atom
+- vscode
 - zsh
 
 ## Features
@@ -28,6 +28,7 @@ These are my personal dotfiles that I use.
 - xautolock
 - pulseaudio-ctl
 - rofi
+- i3blocks
 
 ## Inspirations
 
@@ -42,4 +43,14 @@ Thanks for publishing your dotfiles :)
 - `.scripts` -> `${HOME}`
 - `config` -> `${HOME}/.i3`
 - `lock.sh` -> `${HOME}/.i3`
-- `rofi` -> `${HOME}/.config/rofi/`
+- `rofi` -> `${HOME}/.config/rofi/` rename to `config`
+
+# Editors
+
+## IntelliJ idea
+
+Path: `.<product><version>/config/` -> `.IntellijIdea2017.2/config/`
+
+## vscode
+
+Path: `.config/Code - Insiders/User/`

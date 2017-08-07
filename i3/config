@@ -52,6 +52,7 @@ set $workspace10_monitor $monitor1
 # Assign
   assign [class="Gnome-terminal"] $workspace1
   assign [class="Atom"] $workspace2
+  assign [class="Code - Insiders"] $workspace2
   assign [class="jetbrains-idea"] $workspace2
   assign [class="Google-chrome"] $workspace3
   assign [class="Spotify"] $workspace10

@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "rust.rustup": {
+        "toolchain": "nightly-x86_64-unknown-linux-gnu"
+    },
+    "rust.mode": "legacy",
+    "editor.fontSize": 12,
+    "editor.fontFamily": "'Hasklig Medium', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 120,
+    "window.menuBarVisibility": "toggle",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "extensions.ignoreRecommendations": false
+}
