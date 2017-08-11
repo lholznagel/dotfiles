@@ -2,21 +2,7 @@
 
 These are my personal dotfiles that I use.
 
-**Work in progress, some stuff is missing**
-
-## Todo
-- installer
-- vscode
-- zsh
-
-## Features
-- i3 lock screen
-  - automatically stops spotify and music player
-- Fonts
-  - RobotoMono
-  - Font Awesome
-- volume control
-- Screenshot support pressing Print
+**Work in progress**
 
 ## Requirements
 - i3
@@ -34,15 +20,13 @@ These are my personal dotfiles that I use.
 
 Thanks for publishing your dotfiles :)
 
-- [savoca dotfiles](https://github.com/savoca/dotfiles)
-- [bookercodes dotfiles](https://github.com/bookercodes/dotfiles/)
 - [denysdovhan dotfiles](https://github.com/denysdovhan/dotfiles)
 
 ## i3
-- `.i3blocks.conf` -> `${HOME}`
-- `.scripts` -> `${HOME}`
-- `config` -> `${HOME}/.i3`
-- `lock.sh` -> `${HOME}/.i3`
+- `.i3blocks.conf` -> `${HOME}/.i3blocks.conf`
+- `.scripts` -> `${HOME}/.scripts`
+- `config` -> `${HOME}/.config/i3`
+- `lock.sh` -> `${HOME}/dotfiles/i3`
 - `rofi` -> `${HOME}/.config/rofi/` rename to `config`
 
 # Editors
@@ -54,3 +38,7 @@ Path: `.<product><version>/config/` -> `.IntellijIdea2017.2/config/`
 ## vscode
 
 Path: `.config/Code - Insiders/User/`
+
+or
+
+Path: `.config/Code/User/`
