@@ -52,13 +52,14 @@ set $workspace10_monitor $monitor1
 # Assign
   assign [class="Gnome-terminal"] $workspace1
   assign [class="Atom"] $workspace2
+  assign [class="Code"] $workspace2
   assign [class="Code - Insiders"] $workspace2
   assign [class="jetbrains-idea"] $workspace2
   assign [class="Google-chrome"] $workspace3
   assign [class="Spotify"] $workspace10
 
 # start a terminal
-  bindsym $mod+Return exec i3-sensible-terminal
+  bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
   bindsym $mod+Shift+q kill
@@ -128,9 +129,7 @@ exec --no-startup-id nm-applet
   bindsym XF86AudioPrev exec playerctl previous
 
 # lock screen
-  bindsym $mod+l exec "~/.i3/lock.sh"
-# auto lock after 15 minutes
-  exec xautolock -time 15 -locker "~/i3/lock.sh &"
+  bindsym $mod+l exec "{$HOME}/dotfiles/i3/lock.sh"
 
 # reload the configuration file
   bindsym $mod+Shift+c reload
