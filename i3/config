@@ -67,6 +67,11 @@ set $workspace10_monitor $monitor1
 # start dmenu (a program launcher)
   bindsym $mod+d exec rofi -show run
 
+# using fn + f8 makes problem with a lenovo x230 and arch linux
+# so here is a bindsym to fix this :)
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
 exec --no-startup-id nm-applet
 
 # change focus
@@ -129,7 +134,7 @@ exec --no-startup-id nm-applet
   bindsym XF86AudioPrev exec playerctl previous
 
 # lock screen
-  bindsym $mod+l exec "{$HOME}/dotfiles/i3/lock.sh"
+  bindsym $mod+l exec "$HOME/dotfiles/i3/lock.sh"
 
 # reload the configuration file
   bindsym $mod+Shift+c reload
