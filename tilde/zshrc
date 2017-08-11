@@ -1,0 +1,22 @@
+source "$HOME/.zgen/zgen.zsh"
+
+if ! zgen saved; then
+	echo "Creating a zgen save"
+
+	# load oh my zsh
+	zgen oh-my-zsh
+
+	# load external
+	zgen load zsh-users/zsh-autosuggestions
+	zgen load zsh-users/zsh-syntax-highlighting
+	zgen load hlissner/zsh-autopair
+	
+	# load theme
+	zgen load denysdovhan/spaceship-zsh-theme spaceship
+
+	zgen save
+fi
+
+# theme override
+SPACESHIP_DOCKER_SHOW=false
+SPACESHIP_PROMPT_SYMBOL="λ"
