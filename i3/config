@@ -3,7 +3,7 @@ set $mod Mod4
 
 # colors
 set $base00 #101218
-set $base01 #1f222d
+set $base01 #282C34
 set $base02 #252936
 set $base03 #7780a1
 set $base05 #d1d4e0
@@ -48,7 +48,7 @@ assign [class="Google-chrome"] $workspace3
 assign [class="Spotify"] $workspace10
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec hyper
 
 # kill focused window
 bindsym $mod+Shift+q kill
