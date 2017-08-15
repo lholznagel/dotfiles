@@ -58,8 +58,8 @@ bindsym $mod+d exec rofi -show run
 
 # using fn + f8 makes problem with a lenovo x230 and arch linux
 # so here is a bindsym to fix this :)
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 exec --no-startup-id nm-applet
 
