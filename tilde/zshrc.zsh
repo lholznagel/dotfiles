@@ -1,5 +1,7 @@
 source "$HOME/.zgen/zgen.zsh"
 
+ZSH_CUSTOM="$HOME/dotfiles/zsh"
+
 if ! zgen saved; then
 	echo "Creating a zgen save"
 
@@ -21,9 +23,6 @@ fi
 SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_PROMPT_SYMBOL="λ"
-
-# aliases
-alias ll='ls -alF'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
