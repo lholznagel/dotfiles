@@ -114,10 +114,10 @@ bindsym $mod+a focus parent
 bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
 bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec $HOME/.scripts/sp play
+bindsym XF86AudioPause exec $HOME/.scripts/sp pause
+bindsym XF86AudioNext exec $HOME/.scripts/sp next
+bindsym XF86AudioPrev exec $HOME/.scripts/sp prev
 
 # lock screen
 bindsym $mod+l exec "$HOME/dotfiles/i3/lock.sh"
