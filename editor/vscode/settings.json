@@ -12,6 +12,6 @@
     "window.menuBarVisibility": "toggle",
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
-    "extensions.ignoreRecommendations": false,
-    "workbench.iconTheme": "vscode-great-icons"
+    "extensions.ignoreRecommendations": true,
+    "workbench.iconTheme": "vscode-icons"
 }
