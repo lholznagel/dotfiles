@@ -1,17 +1,39 @@
 {
     "workbench.colorTheme": "One Dark Pro",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "'Hasklig Medium', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 12,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "editor.fontLigatures": true,
     "rust.rustup": {
         "toolchain": "nightly-x86_64-unknown-linux-gnu"
     },
     "rust.mode": "legacy",
-    "editor.fontSize": 12,
-    "editor.fontFamily": "'Hasklig Medium', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.tabSize": 2,
-    "editor.wordWrapColumn": 120,
     "window.menuBarVisibility": "toggle",
-    "editor.fontLigatures": true,
-    "editor.renderWhitespace": "all",
+    "workbench.iconTheme": "vscode-icons",
     "extensions.ignoreRecommendations": true,
-    "workbench.iconTheme": "vscode-icons"
+    "languageTool.language": "de",
+    "latex-workshop.latex.toolchain": [{
+        "command": "pdflatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+        ]
+    }],
+    "[rust]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "files.useExperimentalFileWatcher": true,
+    "explorer.autoReveal": false
 }
