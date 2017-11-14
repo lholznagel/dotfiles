@@ -1,39 +1,55 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.tabSize": 2,
-    "editor.renderWhitespace": "all",
-    "editor.fontFamily": "'Hasklig Medium', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "workbench.colorTheme": "Nord",
     "editor.fontSize": 12,
+    "editor.fontFamily": "'Hasklig Medium', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 120,
+    "window.menuBarVisibility": "toggle",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "extensions.ignoreRecommendations": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "rust.rustup": {
+        "toolchain": "nightly-x86_64-unknown-linux-gnu"
+    },
+    "rust.mode": "legacy",
     "files.exclude": {
-        "**/.git": false,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true
     },
-    "editor.fontLigatures": true,
-    "rust.rustup": {
-        "toolchain": "nightly-x86_64-unknown-linux-gnu"
-    },
-    "rust.mode": "legacy",
-    "window.menuBarVisibility": "toggle",
-    "workbench.iconTheme": "vscode-icons",
-    "extensions.ignoreRecommendations": true,
-    "languageTool.language": "de",
-    "latex-workshop.latex.toolchain": [{
-        "command": "pdflatex",
-        "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "-pdf",
-            "%DOC%"
-        ]
-    }],
+    "todohighlight.include": [
+        "**/*.ts",
+        "**/*.scss",
+        "**/*.rs"
+    ],
+    "todohighlight.isEnable": true,
+    "rust.executeCargoCommandInTerminal": true,
+    "cSpell.enabledLanguageIds": [
+        "go",
+        "javascript",
+        "json",
+        "latex",
+        "markdown",
+        "plaintext",
+        "restructuredtext",
+        "rust",
+        "text",
+        "typescript",
+        "yml"
+    ],
+    "cSpell.language": "en",
+    "cSpell.userWords": [
+        "blockchain",
+        "holznagel",
+        "listenes",
+        "println",
+        "splitted",
+        "struct"
+    ],
     "[rust]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true
-    },
-    "files.useExperimentalFileWatcher": true,
-    "explorer.autoReveal": false
+        "editor.tabSize": 4
+    }
 }

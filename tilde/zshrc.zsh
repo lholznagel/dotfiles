@@ -1,4 +1,5 @@
 source "$HOME/.zgen/zgen.zsh"
+fpath=(~/.zsh/completion $fpath)
 
 ZSH_CUSTOM="$HOME/dotfiles/zsh"
 
@@ -25,10 +26,9 @@ SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=false
 SPACESHIP_PROMPT_SYMBOL="λ"
+SPACESHIP_KUBECONTEXT_SHOW=false
 
 export VISUAL="vim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-[[ -s "/home/lholznagel/.gvm/scripts/gvm" ]] && source "/home/lholznagel/.gvm/scripts/gvm"
