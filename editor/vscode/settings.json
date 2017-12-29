@@ -8,7 +8,7 @@
     "window.menuBarVisibility": "toggle",
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
-    "extensions.ignoreRecommendations": false,
+    "extensions.ignoreRecommendations": true,
     "workbench.iconTheme": "material-icon-theme",
     "rust.rustup": {
         "toolchain": "nightly-x86_64-unknown-linux-gnu"
@@ -51,5 +51,18 @@
     ],
     "[rust]": {
         "editor.tabSize": 4
+    },
+    "typescript.autoImportSuggestions.enabled": true,
+    "material-icon-theme.showUpdateMessage": false,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
     }
 }
