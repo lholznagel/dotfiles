@@ -35,7 +35,7 @@ set_from_resource $separator  i3wm.separator  $lighterbg
 
 set $mod Mod4
 
-
+floating_maximum_size 720 x 480
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -105,6 +105,9 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# lock the screen
+bindsym $mod+l exec "$HOME/dotfiles/.config/i3/lock.sh"
 
 # focus the child container
 #bindsym $mod+d focus child

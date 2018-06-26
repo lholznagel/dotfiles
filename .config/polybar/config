@@ -2,7 +2,6 @@
 background = ${xrdb:background:#ff0000}
 background2 = ${xrdb:lighterbg:#ff0000}
 selection = ${xrdb:selection:#ff0000}
-;foreground = ${xrdb:foreground:#ff0000}
 foreground = #839496
 separator = ${xrdb:separator:#ff0000}
 lightfg = ${xrdb:color7:#ff0000}
@@ -53,6 +52,11 @@ label-connected = " %local_ip% "
 label-disconnected = " %ifname% "
 label-disconnected-foreground = ${colors.selection}
 
+[module/volume]
+type = internal/volume
+
+label-volume = "vol. %percentage%% "
+
 [module/date]
 type = internal/date
 interval = 1.0
@@ -76,8 +80,7 @@ pin-workspaces = true
 
 label-focused = %index%
 label-focused-padding = 1
-label-focused-foreground = ${colors.selection}
-label-focused-background = ${colors.selection}
+label-focused-background = ${colors.background}
 
 label-unfocused = %index%
 label-unfocused-background = ${colors.background2}
@@ -98,7 +101,7 @@ monitor = ${env:MONITOR:}
 bottom = true
 modules-left = i3
 modules-center = 
-modules-right = wired wireless battery time
+modules-right = wired wireless volume battery time
 background = ${colors.background}
 foreground = ${colors.foreground}
 font-0 = DejaVu Sans Mono:size=10;3
