@@ -1,6 +1,7 @@
 source "$HOME/.zgen/zgen.zsh"
 fpath=(~/.zsh/completion $fpath)
 
+MODEM="6735"
 ZSH_CUSTOM="$HOME/dotfiles/zsh"
 
 if ! zgen saved; then
@@ -41,5 +42,6 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 
 export GPG_TTY=$(tty)
+export PATH=$PATH:/home/lholznagel/.local/bin
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
