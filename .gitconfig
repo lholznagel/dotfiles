@@ -1,0 +1,14 @@
+[user]
+  email = contact@lholznagel.info
+  name = lholznagel
+  signingkey = D8723BC829BA0E48
+
+[core]
+  editor = nvim
+  quotepath = false
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = gpg2
