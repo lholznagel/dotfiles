@@ -10,6 +10,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'kien/rainbow_parentheses.vim'
 
+":CocInstall coc-json
+":CocInstall coc-markdownlint
+":CocInstall coc-tsserver
+":CocInstall coc-yaml
+":CocInstall coc-rust-analyzer
+":CocInstall coc-vetur
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'vim-airline/vim-airline'
@@ -18,11 +24,15 @@ Plug 'ayu-theme/ayu-vim'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 set termguicolors
 let ayucolor='mirage'
 colorscheme ayu
+
+let NERDTreeShowHidden=1
 
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
@@ -32,6 +42,7 @@ autocmd FileType markdown setlocal shiftwidth=2 softtabstop=2 expandtab
 
 " Custom Keymaps
 map <F2> :NERDTreeToggle<CR>
+map <F3> :NERDTreeFocus<CR>
 
 set number
 
